@@ -4,3 +4,4 @@ npm-debug.log*
 /public/
 desktop.ini
 thumbs.db
+package-lock.json
