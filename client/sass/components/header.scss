@@ -1,0 +1,55 @@
+@import '../colors.scss';
+
+header {
+	background: $secondary-color;
+	width: 100%;
+	height: 95px;
+	line-height: 95px;
+	border-bottom: 1px solid $tertiary-color;
+	display: flex;
+
+	.left {
+		flex: 1;
+
+		.title {
+			margin-left: 15%;
+			font-size: 32px;
+			line-height: 95px;
+			color: $tertiary-color;
+		}
+	}
+
+	.right {
+		flex: 5;
+
+		.menu {
+			height: 40px;
+			margin-top: 26px;
+			line-height: 40px;
+			font-size: 14px;
+			margin-right: 10%;
+			user-select: none;
+			text-align: right;
+
+			.button {
+				transition: all 0.3s;
+				height: 40px;
+				width: 80px;
+				background: rgba(0,0,0,0.2);
+				cursor: pointer;
+				margin-left: 15px;
+				text-align: center;
+				display: inline-block;
+				vertical-align: top;
+				
+				&:hover {
+					background: rgba(0,0,0,0.1);
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

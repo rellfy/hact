@@ -1,0 +1,29 @@
+{
+	"db": {
+		"mongoURI": "mongodb://user:password@domain:port/dataase?authSource=admin"
+	},
+	"web": {
+		"httpPort": 8080,
+		"_comment": "httpsPort must be null if not using HTTPS",
+		"httpsPort": 443,
+		"cookie": {
+			"pwd": "strong-cookie-password",
+			"name": "hurp-cookie",
+			"authRedirect": "/login"
+		},
+		"socket": {
+			"pwd": "strong-websocket-password",
+			"name": "hurp-ws"
+		},
+		"ssl": {
+			"key": "/ssl/example.com.key",
+			"cert": "/ssl/example.com.crt",
+			"certInt": "/ssl/example.com.int.crt"
+		},
+		"routes": {
+			"index": {
+				"title": "HURP Architecture"
+			}
+		}
+	}
+}
