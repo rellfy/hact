@@ -3,10 +3,12 @@ const Nodemon = require('gulp-nodemon');
 
 Gulp.task('nodemon', () => {
 
-    const nodeArgs = [/*--something*/];
+    const nodeArgs = [];
+    const args     = [];
 
-    if (process.env.DEBUGGER) {
-        nodeArgs.push('--debug');
+    if (process.argv.includes('--debug')) {
+        nodeArgs.push('--inspect');
+        args.push('--debug');
     }
 
     Nodemon({
@@ -18,9 +20,10 @@ Gulp.task('nodemon', () => {
             'public/**/*',
             'node_modules/**/*'
         ],
-        nodeArgs
+        nodeArgs,
+        args
     })
     .on('restart', (files) => {
-        console.log('Change detected:', files);
+        console.log('File change detected:', files);
     });
 });

@@ -8,12 +8,12 @@
 		"httpsPort": 443,
 		"cookie": {
 			"pwd": "strong-cookie-password",
-			"name": "hurp-cookie",
+			"name": "hact-cookie",
 			"authRedirect": "/login"
 		},
 		"socket": {
 			"pwd": "strong-websocket-password",
-			"name": "hurp-ws"
+			"name": "hact-ws"
 		},
 		"ssl": {
 			"key": "/ssl/example.com.key",
@@ -22,7 +22,7 @@
 		},
 		"routes": {
 			"index": {
-				"title": "HURP Architecture"
+				"title": "hact Architecture"
 			}
 		}
 	}

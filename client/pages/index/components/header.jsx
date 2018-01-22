@@ -19,7 +19,7 @@ export default class Header extends React.Component {
 		return (
 			<header>
 				<div className="left">
-					<div className="title">HURP</div>
+					<div className="title">hact</div>
 				</div>
 				<div className="right">
 					<div className="menu">

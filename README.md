@@ -1,4 +1,4 @@
-# HURP
+# hact
 
 Simple, easily scalable base architecture for web servers running Node.
 

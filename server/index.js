@@ -1,14 +1,16 @@
+global.production = process.env.NODE_ENV === 'production';
+
 const Hapi = require('hapi');
 const Glue = require('glue');
 const path = require('path');
-const manifest = require('./manifest.js');
-const httpsRedirect = require('./ssl/redirect.js');
 const BabelRegister = require('babel-core/register');
-const config = require('./config.json');
 
-// If using SSL, redirect user to HTTPS.
+const manifest = require('./manifest.js');
+const config = require('./config.json');
+const HTTPS = require('./ssl/redirect.js');
+
 if (config.web.httpsPort)
-	httpsRedirect('localhost', config.web.httpPort);
+	HTTPS('localhost', config.web.httpPort);
 
 const options = {
 	relativeTo: path.join(__dirname, '../'),

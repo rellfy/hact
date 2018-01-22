@@ -38,7 +38,7 @@ Gulp.task('webpack', (callback) => {
             index: path.join(__dirname, '/../client/pages/index/index')
         },
         output: {
-            path: path.join(__dirname, '/../public/pages'),
+            path: path.join(__dirname, '/../client/public/pages'),
             filename: '[name].min.js',
             sourceMapFilename: '[name].map.js'
         },

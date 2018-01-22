@@ -34,7 +34,7 @@ const jsonFetch = (options, callback) => {
 
         if (response.statusCode >= 200 && response.statusCode < 300) {
             if (response.headers.hasOwnProperty('x-auth-required')) {
-                console.log('[hurp log | json-fetch.js] authentication is required, redirecting to /login')
+                console.log('[hact log | json-fetch.js] authentication is required, redirecting to /login')
                 window.location.href = '/login';
             }
             else {

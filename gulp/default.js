@@ -1,3 +1,3 @@
 const Gulp = require('gulp');
 
-Gulp.task('default', ['watch', 'build', 'nodemon', 'media']);
+Gulp.task('default', ['watch', 'build', 'nodemon']);

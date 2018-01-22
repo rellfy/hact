@@ -29,7 +29,7 @@ export default class About extends React.Component {
 
         return (
             <div className="page about">
-                HURP is a full stack architecture to be used as a project's foundations for web applications.
+                hact is a full stack architecture to be used as a project's foundations for web applications.
             </div>
         );
     }

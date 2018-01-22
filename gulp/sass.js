@@ -8,10 +8,9 @@ const sass = require('gulp-sass');
 Gulp.task('sass', () => {
     const bundleConfigs = [{
         entries: [
-            './client/sass/index.scss',
-            './client/sass/font-awesome.scss'
+            './client/sass/index.scss'
         ],
-        dest: './public',
+        dest: './client/public',
         outputName: 'core.min.css'
     }];
 

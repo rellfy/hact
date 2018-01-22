@@ -5,7 +5,7 @@ const config = require('./config.json');
 const manifest = {
     'server': {
         'app': {
-            'slogan': 'The HURP Architecture Project'
+            'slogan': 'hact Project'
         }
     },
     'connections': [

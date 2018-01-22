@@ -11,9 +11,6 @@ import About from './routes/about'
 class Page {
 
 	static load() {
-        console.log(`
-            welcome to HURP
-        `);
         Page.render();
 	}
 

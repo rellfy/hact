@@ -1,5 +1,5 @@
 {
-  "name": "HURP",
+  "name": "hact",
   "version": "1.0.0",
   "description": "Hapi, React and Gulp architecture",
   "main": "./server/index.js",
@@ -49,6 +49,6 @@
     "type": "git",
     "url": "none"
   },
-  "author": "Nioel Studios",
+  "author": "Lorenzo Fontoura",
   "license": "MIT"
 }
