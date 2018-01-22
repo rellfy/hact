@@ -4,7 +4,7 @@ Simple, easily scalable base architecture for web servers running Node.
 
 ## Client
 
-The client uses React. This project is also using React Router.
+The client uses React. This project is also using React Router and Redux.
 
 Client source is located at `/client`. Media files may be placed under `/client/media`, which would be moved to `/public` to be statically served publicly along with transpiled React source, which may be placed under `/client/pages`.
 
