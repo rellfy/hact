@@ -5,7 +5,7 @@ exports.register = function (server, options, next) {
         path: '/public/{param*}',
         handler: {
             directory: {
-                path: 'public',
+                path: 'client/public',
                 listing: true
             }
         }
